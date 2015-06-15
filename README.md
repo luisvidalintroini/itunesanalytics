@@ -1,2 +1,2 @@
 # itunesanalytics
-itunesanalytics is module wrapping iTunes Connect Analytics API. It allows to query units/installs/sessions reports in easy way
+itunesanalytics is a module wrapping iTunes Analytics API. It allows to query units/installs/sessions reports on an easy way
