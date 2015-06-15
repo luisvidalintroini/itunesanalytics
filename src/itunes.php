@@ -1,5 +1,5 @@
 <?php
-namespace ItunesAnalytics;
+namespace luisvidalintroini\ItunesAnalytics;
 include 'http.php';
 
 class Frequency

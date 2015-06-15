@@ -1,9 +1,9 @@
 <?php
 include "../src/itunes.php";
-use ItunesAnalytics\ItunesConnect;
-use ItunesAnalytics\Frequency;
-use ItunesAnalytics\Measure;
-use ItunesAnalytics\Dimension;
+use luisvidalintroini\ItunesAnalytics\ItunesConnect;
+use luisvidalintroini\ItunesAnalytics\Frequency;
+use luisvidalintroini\ItunesAnalytics\Measure;
+use luisvidalintroini\ItunesAnalytics\Dimension;
 
 $itunes_user = '';
 $itunes_password = '';
