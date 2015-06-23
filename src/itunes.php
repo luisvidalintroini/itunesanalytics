@@ -64,7 +64,7 @@ class ItunesConnect
         return $form_action;
     }
 
-    private function login()
+    public function login()
     {
         $server_output = post($this->getLoginAction(),
             ['theAccountName' => $this->username, 'theAccountPW' => $this->password, 'theAuxValue' => ''],
@@ -74,7 +74,10 @@ class ItunesConnect
 
         $this->cookies = implode('; ', $matches[1]);
 
-        return $server_output;
+        preg_match_all('|<span class="dserror[^>]+>(.*)</[^>]+>|U', 
+        $server_output, 
+        $errors, PREG_PATTERN_ORDER);
+        return $errors[1];
     }
 
     public function getTimeSeries($appId, $start_time, $end_time, $frequency, array $measures, $dimension, array $dimension_options)
